@@ -77,6 +77,15 @@ figure {
 .textright {
     text-align: right;
 }
+.quarter {
+    @include span-columns(12);
+    @include media ($small) {
+        @include span-columns(6);
+    }
+    @include media ($medium) {
+        @include span-columns(3);
+    }
+}
 
 ///	Body
 

@@ -40,3 +40,11 @@
         outline: none;
     }
 }
+.location-strip {
+    display: block;
+    border-top: $base-border;
+    padding: 1em 0;
+}
+.location-strip::after {
+    border-bottom: $base-border;
+}

@@ -7,6 +7,7 @@
     display: inline-block;
     width: 30px;
     height: 30px;
+    fill: $action-color;
 }
 a:hover .icon { /// hover colour
     fill: $highlight-color;
@@ -43,4 +44,5 @@ a:hover .icon { /// hover colour
 a svg {
     display: inline-block;
     vertical-align: middle;
+
 }
