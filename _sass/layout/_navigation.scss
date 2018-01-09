@@ -8,6 +8,10 @@
     padding: 1em 1em 0;
     background-color: $white;
     z-index: 99; // to cover over flexslider
+    width: 100%;
+    @include media ($medium) {
+        padding: 1em 0 0;
+    }
 }
 /// Nav menu
 .navigation-wrapper {
@@ -15,6 +19,7 @@
     @include clearfix;
     position: relative;
     background-color: $white;
+
 }
 
 /// small view
@@ -70,6 +75,7 @@ ul.navigation-menu {
         display: block;
         margin: 0;
         padding: 0;
+        text-align: left;
     }
     &.show {
         display: block;

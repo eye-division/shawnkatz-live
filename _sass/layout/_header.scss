@@ -8,8 +8,9 @@
     color: $base-font-color;
     //text-shadow: 0 2px 1px rgba(0,0,0,0.8) !important;
     //background: rgba($navigation-color, 0.8);
-    padding: 0 0.5em;
+    //padding: 0 0.5em;
     @include media ($small) {
+        padding: 0;
         //width: 40%;
     }
     //float: left;
@@ -18,7 +19,7 @@
     span {
         font-size: 1.25em;
     }
-    h1 {
+    .site-title {
         margin-bottom: 0;
     }
     .subtitle {

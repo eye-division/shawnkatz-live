@@ -28,40 +28,47 @@ _comments:
   images: Add and edit images here
 ---
   <div class="editable">
-       <p>37A Lansdowne Place
-        Brighton and Hove, East Sussex
+    <p>37A Lansdowne Place
+      Brighton and Hove, East Sussex
       BN3 1HF</p>
-        <p><strong>Telephone:</strong> 07766 707531 or 01273 875961</p>
-
+    <p><strong>Telephone:</strong> 07766 707531 or 01273 875961</p>
   </div>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.3196738093693!2d-0.16320814890065705!3d50.825242418068875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875854004d93f8f%3A0x23fce6eb1ccbb298!2sLansdowne+Pl%2C+Hove+BN3+1HF!5e0!3m2!1sen!2suk!4v1515485415732" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="editable">
+        <h2>Directions</h2>
+        <p>The location on Lansdowne Place is between Western Road and the seafront, a few doors down from the Starbucks. It is approximately a 1-mile walk from the Hove train station and a 1.5 mile walk from Brighton main train station.</p>
 
-      <h4>Send an email</h4>
+        <p>Bus lines 5, 25, &amp; 49 which depart from both Hove &amp; Brighton stations, stop on Western Road. (Line 1 stops on Western Road as well but only goes by the Brighton station).</p>
+
+        <p>If you are driving, there is on street parking in zoned areas for £2 an hour, £4.20 for two hours, but please leave a few minutes to find parking, as it can be busy. Most of the payment for parking is now pay by phone, which needs to be registered and set up beforehand by going to <a href="https://www.paybyphone.co.uk">www.paybyphone.co.uk</a> or by calling 01273-458458.</p>
+      </div>
+
+      <h2>Send an email</h2>
 
       <form action="/thanks/" method="post">
 
       <fieldset>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_to" value="support@eyedivision.com">
-            <input type="hidden" name="_subject" value="Web form">
-            <p>
-            <label for="name">Name:</label>
-            <input type="text" name="name">
-            </p>
-            <p>
-            <label for="_replyto">Email:</label>
-            <input type="email" name="_replyto">
-            </p>
-            <p>
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            </p>
-            {% if site.recaptcha_site_key %}
-                  <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
-            {% endif %}
-      	<p>
-            <input type="submit" value="Send message">
-            </p>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_to" value="support@eyedivision.com">
+        <input type="hidden" name="_subject" value="Web form">
+        <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        </p>
+        <p>
+        <label for="_replyto">Email:</label>
+        <input type="email" name="_replyto">
+        </p>
+        <p>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        </p>
+        {% if site.recaptcha_site_key %}
+          <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
+        {% endif %}
+  	   <p>
+        <input type="submit" value="Send message">
+        </p>
       </fieldset>
 
       </form>
