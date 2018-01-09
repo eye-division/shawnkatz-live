@@ -17,31 +17,6 @@ _comments:
     <p>As a Consultant Psychologist and psychotherapist I have worked with hundreds of patients and understand the courage it takes to face one’s emotions. My specialities are in working with trauma (PTSD - Post Traumatic Stress Disorder), complex trauma, dissociative disorders, childhood abuse, depression and anxiety, couples therapy as well as relationship issues for individuals, and clinical supervision.</p>
     </div>
 
-    {% if page.carousel %}
-    <!-- <div class="two-thirds no-gutter"> -->
-    <section>
-      <h2>This is a demo slideshow</h2>
-      <div class="flexslider">
-          <ul class="slides">
-            {% for slides in page.carousel %}
-            <li>
-              {% if slides.link %}
-              <a href="{{ site.baseurl }}{{ slides.link }}" title="View project">
-              {% endif %}
-              {% include img.html src=slides.image width=960 alt=slides.caption %}
-              {% if slides.link %}
-              </a>
-            {% endif %}
-              {% if slides.caption %}
-              <p class="flex-caption">{% if slides.link %}<a href="{{ site.baseurl }}{{ slides.link }}" title="View project">{% endif %}{{ slides.caption }}{% if slides.link %}&nbsp;<svg class="icon icon__white icon--readmore"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-double_angle_right" /></svg></a>{% endif %}</p>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </section>
-      <!-- </div> -->
-      {% endif %}
 
       <!-- Regular page promotions on front page -->
       {% for section in site.pages %}
@@ -73,22 +48,4 @@ _comments:
 
     {% endfor %}
 
-      <!-- Galleries -->
-    {% for gallery in site.gallery %}
-      {% if gallery.frontpage %}
-        <section class="gallery-cover {% if gallery.main_image_path %}has-cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
-          <a href="{{ gallery.url }}">
-            <div class="scrim {% if gallery.main_image_path %}has-cover{% endif %}">
-            <article class="gallery--front">
-              <header class="gallery-header">
-                <h2 class="title">{{ gallery.title }}</h2>
-              </header>
-              {% if gallery.homepage_description_markdown:  %}
-                {{ gallery.homepage_description_markdown:  | markdownify }}
-              {% endif %}
-          </article>
-          </div>
-        </a>
-      </section>
-      {% endif %}
-    {% endfor %}
+

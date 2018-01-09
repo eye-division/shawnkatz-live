@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .site-footer {
-
+    width: 100%;
     @include outer-container;
     padding: 1em;
     background-color: $white;
@@ -22,6 +22,9 @@
             &:focus {
             outline: none;
         }
+    }
+    @include media ($medium) {
+       padding: 1em 0;
     }
 }
 
