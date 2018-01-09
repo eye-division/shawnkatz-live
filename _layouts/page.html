@@ -20,6 +20,13 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
+  <!-- quote -->
+  {% if page.quote %}
+    <blockquote>
+      <p>{{ page.quote }}</p>
+      <cite>{{ page.cite }}</cite>
+    </blockquote>
+  {% endif %}
 
   {% if page.images[0].image_path %}
     <section class="gallery">
