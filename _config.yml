@@ -33,8 +33,8 @@ uploads_dir: "assets/images"
 
 # Image CDN
 imagecdn:
-  #staging: "http://ed-eyegallery-dev.imgix.net"
-  #production: "http://ed-eyegallery.imgix.net"
+  staging: "https://ed-shawnkatz-dev.imgix.net"
+  #production: "https://ed-shwankatz.imgix.net"
 
 # Collections Example
 collections:

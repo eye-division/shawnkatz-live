@@ -5,9 +5,9 @@ description_markdown: >-
   dicta ex incidunt harum id vitae itaque alias voluptates pariatur! Aliquid
   expedita rerum autem vel est pariatur, quibusdam consectetur, aliquam!
 homepage_description_markdown: 
-frontpage: true
+frontpage: false
 _gallery_date: 2016-05-01 00:00:00
-permalink: /gallery/test/
+permalink: /gallery/gallery1/
 archive: false
 display_title: true
 main_image_path: /assets/images/e-la-nave-va_21390829511_o.jpg

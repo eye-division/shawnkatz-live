@@ -21,17 +21,17 @@ h6 {
   font-weight: 300;
 }
 h1 {
-	font-size: modular-scale(3);
+	font-size: modular-scale(4);
 }
 h2 {
-	font-size: modular-scale(3);
+	font-size: modular-scale(2);
   border-bottom: 1px solid tint($base-font-color, 90%);
 }
 h3 {
-	font-size: modular-scale(2);
+	font-size: modular-scale(1);
 }
 h4 {
-	font-size: modular-scale(1);
+	font-size: modular-scale(0);
 }
 h5 {
 	font-size: modular-scale(-1);

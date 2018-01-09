@@ -1,9 +1,9 @@
 // Google Fonts
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300|Lato:300,400);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300|Quattrocento+Sans:400,400italic,700);
 /// Typography
 $base-font-family: ('Open Sans',  'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif); // $helvetica;
-$heading-font-family: ('Lato', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif); // $base-font-family;
-$subheading-font-family: ('Lato', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif);
+$heading-font-family: ('Quattrocento Sans', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif); // $base-font-family;
+$subheading-font-family: ('Quattrocento Sans', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif);
 // Font Sizes
 $base-font-size: $em-base; // 16px
 
@@ -64,7 +64,7 @@ $base-background-color: rgb(255, 255, 255);
 $base-font-color: $dark-gray;
 
 // link colours
-$action-color: $black;
+$action-color: $orange;
 $highlight-color: tint($action-color, 33%);
 // Accessible link colours
 $aaa-link: rgb(51, 68, 221);
@@ -88,7 +88,7 @@ $navigation-submenu-padding: 1em;
 $navigation-submenu-width: 15em;
 // navigation colours
 $navigation-color: $black;
-$navigation-color-hover: $medium-gray;
+$navigation-color-hover: $action-color;
 $navigation-active-link-color: transparentize(white, 0.5);
 
 // drop down variables

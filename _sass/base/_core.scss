@@ -40,6 +40,7 @@ body {
 .site-footer {
     grid-area: footer;
 }
+
 .page-content {
     @include flex(1 0 auto);
     grid-area: page;

@@ -3,8 +3,8 @@ title: Test 2
 description_markdown: Testing images
 homepage_description_markdown: 
 _gallery_date:
-frontpage: true
-permalink: /gallery/test2/
+frontpage: false
+permalink: /gallery/gallery2/
 display_title: true
 archive: false
 main_image_path: /assets/images/IMG_3317.jpg

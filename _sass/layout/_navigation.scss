@@ -35,10 +35,10 @@
     }
     &:hover, &:active {
         text-decoration: none;
-        color: tint($navigation-color,20%);
+        color: $action-color;
         /// menu icon
         .icon-menu {
-            fill : tint($navigation-color,20%);
+            fill : tint($action-color,20%);
         }
     }
     @include media ($medium) {
