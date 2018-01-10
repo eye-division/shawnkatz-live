@@ -68,21 +68,33 @@ figure {
 }
 // layout elements
 
-.half {
+.halves {
+    // grid setup
+    @include media ($large) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+    }
+
+    /*
     @include span-columns(12);
     @include media ($small) {
         @include span-columns(6);
-    }
+    }*/
 }
+.half {
+
+}
+
 .textright {
     text-align: right;
 }
 .quarter {
     @include span-columns(12);
-    @include media ($small) {
+    @include media ($medium) {
         @include span-columns(6);
     }
-    @include media ($medium) {
+    @include media ($large) {
         @include span-columns(3);
     }
 }
@@ -95,25 +107,11 @@ figure {
         @include outer-container;
         padding: 1em;
         background-color: $white;
-        @include media ($medium) {
+        @include media ($large) {
             padding: 0;
         }
     }
-    ///	index.html
-    .site-header-container {
-        color: $white;
-        text-shadow: 0 2px 1px rgba(0,0,0,0.33);
-        background-color: $highlight-color;
-        .site-header{
-            .title {
-                font-size: modular-scale(6);
-            }
-            .subtitle {
-                font-style: italic;
-                font-size: modular-scale(1);
-            }
-        }
-    }
+
     img {
         display: block;
         margin: auto;

@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the logos
+// -----------------------------------------------------------------------------
+
+.logos {
+  border-top: $base-border;
+  border-bottom: $base-border;
+  text-align: center;
+  padding-bottom: 1em;
+  ul {
+      @include display(flex);
+      @include flex-wrap(wrap);
+      @include justify-content(center);
+    }
+    img {
+        max-width: 16em;
+    }
+
+}

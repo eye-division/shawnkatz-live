@@ -23,11 +23,10 @@
         margin-bottom: 0;
     }
     .subtitle {
-        color: $base-font-color;
+        color: tint($action-color,0.2);
         font-family: $subheading-font-family;
-        font-weight: 200;
         //font-style: italic;
-        font-size: modular-scale(3);
+        font-size: modular-scale(2);
     }
     &:active,
     &:focus,

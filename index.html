@@ -19,42 +19,38 @@ _comments:
     <div class="editable">
     <p>As a Consultant Psychologist and psychotherapist I have worked with hundreds of patients and understand the courage it takes to face one’s emotions. My specialities are in working with trauma (PTSD - Post Traumatic Stress Disorder), complex trauma, dissociative disorders, childhood abuse, depression and anxiety, couples therapy as well as relationship issues for individuals, and clinical supervision.</p>
     </div>
-
-      <!-- Regular page promotions on front page -->
-      {% for section in site.pages %}
+  <section class="halves">
+    {% for section in site.pages %}
 
       {% if section.frontpage %}
 
-         <section>
+
+         <article class="half">
 
             <a href="{{ section.url | prepend: site.baseurl }}">
 
-                <article class="">
                   {% if section.main_image_path %}
-                    <figure>
+                    <figure class="nomargin">
                     {% include img.html src=section.main_image_path width=1200 max-h=300 fit=crop alt=section.frontpagetitle %}
                     </figure>
                   {% endif %}
-                  <header class="">
-                    <h2 class="title">{{ section.frontpagetitle }}</h2>
-                  </header>
+                  <h2 class="title title--plain nomargin">{{ section.frontpagetitle }}</h2>
                   {% if section.homepage_description_markdown: %}
-                    {{ section.homepage_description_markdown:  | markdownify }}<br>
+                    {{ section.homepage_description_markdown:  | markdownify }}
                     <span class="readmore">Read more </span> <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg>
-
                   {% endif %}
-              </article>
 
             </a>
 
-          </section>
+          </article>
+
 
       {% endif %}
 
     {% endfor %}
-
+</section>
 <div class="editable">
-  <ul class="no-list">
+  <ul class="no-list nomargin">
     <li>Chartered &amp; Registered Counselling Psychologist (HCPC)</li>
     <li>Transpersonal and Integrative Psychotherapist (UKCP) </li>
     <li>Accredited EMDR Consultant (EMDR Europe &amp; EMDR UK &amp; Ireland)</li>
