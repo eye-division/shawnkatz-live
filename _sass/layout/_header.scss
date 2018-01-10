@@ -42,12 +42,13 @@
 .location-strip {
     display: block;
     border-top: $base-border;
-    padding: 1em 0;
+    padding: 1em;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 10px;
 
-    @include media ($medium-screen) {
+    @include media ($medium-screen-up) {
+        padding: 1em 0;
         grid-template-columns: 25% 25% 25% 25%;
     }
 }

@@ -49,7 +49,16 @@ _comments:
       {% endif %}
 
     {% endfor %}
-</section>
+  </section>
+
+    <!-- quote -->
+  {% if page.quote %}
+    <blockquote>
+      <p>{{ page.quote }}</p>
+      <cite>{{ page.cite }}</cite>
+    </blockquote>
+  {% endif %}
+
 <div class="editable">
   <ul class="no-list nomargin">
     <li>Chartered &amp; Registered Counselling Psychologist (HCPC)</li>
