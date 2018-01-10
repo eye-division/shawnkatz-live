@@ -9,7 +9,7 @@
     background-color: $white;
     z-index: 99; // to cover over flexslider
     width: 100%;
-    @include media ($medium) {
+    @include media ($medium-screen) {
         padding: 1em 0 0;
     }
 }
@@ -46,7 +46,7 @@
             fill : tint($action-color,20%);
         }
     }
-    @include media ($medium) {
+    @include media ($medium-screen) {
         display: none;
     }
 }
@@ -57,7 +57,7 @@
 
 nav {
     float: right;
-    @include media ($medium) {
+    @include media ($medium-screen) {
         float: none;
         line-height: 1.5em;
     }
@@ -71,7 +71,7 @@ ul.navigation-menu {
     overflow: visible;
     padding: 0;
     width: 100%;
-    @include media ($medium) {
+    @include media ($medium-screen) {
         display: block;
         margin: 0;
         padding: 0;
@@ -89,7 +89,7 @@ li.nav-link {
     text-align: right;
     width: 100%;
     padding: 0.25em 0;
-    @include media ($medium) {
+    @include media ($medium-screen) {
         background: transparent;
         display: inline;
         text-decoration: none;
@@ -98,7 +98,7 @@ li.nav-link {
     a {
         color: $navigation-color;
         display: inline-block;
-        @include media ($medium) {
+        @include media ($medium-screen) {
             padding-right: 1.5em;
         }
         &:hover {
@@ -108,7 +108,7 @@ li.nav-link {
     }
 
     &:last-child a {
-        @include media ($medium) {
+        @include media ($medium-screen) {
             padding-right: 1em;
         }
     }

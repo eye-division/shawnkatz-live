@@ -43,6 +43,13 @@
     display: block;
     border-top: $base-border;
     padding: 1em 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+
+    @include media ($medium-screen) {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
 }
 .location-strip::after {
     border-bottom: $base-border;

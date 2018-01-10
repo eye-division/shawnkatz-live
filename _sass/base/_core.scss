@@ -70,7 +70,7 @@ figure {
 
 .halves {
     // grid setup
-    @include media ($large) {
+    @include media ($large-screen) {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-gap: 10px;
@@ -90,13 +90,15 @@ figure {
     text-align: right;
 }
 .quarter {
-    @include span-columns(12);
+    /*@include span-columns(12);
     @include media ($medium) {
         @include span-columns(6);
     }
     @include media ($large) {
         @include span-columns(3);
-    }
+    }*/
+
+
 }
 
 ///	Body
@@ -107,7 +109,7 @@ figure {
         @include outer-container;
         padding: 1em;
         background-color: $white;
-        @include media ($large) {
+        @include media ($large-screen) {
             padding: 0;
         }
     }

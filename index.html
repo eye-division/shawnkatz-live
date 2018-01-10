@@ -4,6 +4,8 @@ main_image_path: /assets/images/sunset-beach.jpg
 main_image_caption: Sunset on Brighton beach
 profile_image_path: /assets/images/shawnkatz.jpg
 profile_image_caption:
+quote: "We may or may not be able to change our outer circumstances, but with awareness we can always change our inner attitude, and this is enough to transform our life"
+cite: Jack Kornfield
 _options:
   main_image_path:
     width: 1200
@@ -19,31 +21,30 @@ _comments:
     <div class="editable">
     <p>As a Consultant Psychologist and psychotherapist I have worked with hundreds of patients and understand the courage it takes to face one’s emotions. My specialities are in working with trauma (PTSD - Post Traumatic Stress Disorder), complex trauma, dissociative disorders, childhood abuse, depression and anxiety, couples therapy as well as relationship issues for individuals, and clinical supervision.</p>
     </div>
+
   <section class="halves">
     {% for section in site.pages %}
 
       {% if section.frontpage %}
 
+         <article class="half section-link">
 
-         <article class="half">
+            <a href="{{ section.url | prepend: site.baseurl }}" class="link-nocolor">
 
-            <a href="{{ section.url | prepend: site.baseurl }}">
-
-                  {% if section.main_image_path %}
-                    <figure class="nomargin">
-                    {% include img.html src=section.main_image_path width=1200 max-h=300 fit=crop alt=section.frontpagetitle %}
-                    </figure>
-                  {% endif %}
-                  <h2 class="title title--plain nomargin">{{ section.frontpagetitle }}</h2>
-                  {% if section.homepage_description_markdown: %}
-                    {{ section.homepage_description_markdown:  | markdownify }}
-                    <span class="readmore">Read more </span> <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg>
-                  {% endif %}
+              {% if section.main_image_path %}
+                <figure class="nomargin">
+                {% include img.html src=section.main_image_path width=960 max-h=300 fit=crop alt=section.frontpagetitle %}
+                </figure>
+              {% endif %}
+              <h2 class="title title--plain nomargin">{{ section.frontpagetitle }}</h2>
+              {% if section.homepage_description_markdown: %}
+                {{ section.homepage_description_markdown:  | markdownify }}
+                <span class="readmore">Read more </span> <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg>
+              {% endif %}
 
             </a>
 
           </article>
-
 
       {% endif %}
 

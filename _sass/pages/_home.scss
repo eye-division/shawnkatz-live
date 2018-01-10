@@ -7,7 +7,9 @@
     .page-content {
         @include outer-container(100%);
     }
-
+    article a {
+        color: $base-font-color;
+    }
 }
 .title--plain {
     border-bottom: none;
