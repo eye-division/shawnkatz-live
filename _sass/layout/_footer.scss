@@ -2,13 +2,26 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 
+.logos {
+  text-align: center;
+  ul {
+      @include display(flex);
+      @include flex-wrap(wrap);
+      @include justify-content(center);
+    }
+    img {
+        max-width: 16em;
+    }
+
+}
+
 .site-footer {
     width: 100%;
-    @include outer-container;
+    //@include outer-container;
     padding: 1em;
     background-color: $white;
     .wrapper {
-        @include outer-container;
+        //@include outer-container;
         padding: 0 1em;
     }
     a {
@@ -31,10 +44,6 @@
 ///  Site Navigation (left)
 
 .site-navigation {
-    @include span-columns(12);
-    @include media ($small) {
-       // @include span-columns(6);
-    }
     ul {
         @extend %default-ul;
     }
@@ -43,12 +52,6 @@
 ///   Site Description/Signature (right)
 
 .site-signature {
-    @include span-columns(12);
-    /*@include media ($medium) {
-        @include span-columns(6);
-        margin-right: 0;
-        margin-top: 0;
-    }*/
     a {
         text-decoration: underline;
     }
@@ -57,12 +60,6 @@
 ///   Contact Info (center)
 
 .site-contact {
-    @include span-columns(12);
-    /*@include media ($small) {
-        @include span-columns(6);
-        margin-top: 0;
-        margin-right: 0;
-    }*/
 
     i {
         width: 1.25em;

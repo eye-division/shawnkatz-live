@@ -2,6 +2,8 @@
 layout: home
 main_image_path: /assets/images/sunset-beach.jpg
 main_image_caption: Sunset on Brighton beach
+profile_image_path: /assets/images/shawnkatz.jpg
+profile_image_caption:
 _options:
   main_image_path:
     width: 1200
@@ -10,42 +12,56 @@ _options:
     mime_type: "image/jpeg"
 _comments:
   main_image_path: Image used to represent your page
-
+  profile_image_path: Portrait photo
 ---
+
 
     <div class="editable">
     <p>As a Consultant Psychologist and psychotherapist I have worked with hundreds of patients and understand the courage it takes to face one’s emotions. My specialities are in working with trauma (PTSD - Post Traumatic Stress Disorder), complex trauma, dissociative disorders, childhood abuse, depression and anxiety, couples therapy as well as relationship issues for individuals, and clinical supervision.</p>
     </div>
-
 
       <!-- Regular page promotions on front page -->
       {% for section in site.pages %}
 
       {% if section.frontpage %}
 
-        {% if section.main_image_path %}
-          <section class="gallery-cover has-cover" style="background-image: url({{ section.main_image_path }});">
-        {% else %}
-          <section class="gallery-cover has-cover" style="background-image: url('http://placekitten.com/g/1200/300');">
-        {% endif %}
+         <section>
+
             <a href="{{ section.url | prepend: site.baseurl }}">
-              <div class="scrim has-cover">
-                <article class="gallery--front">
-                  <header class="gallery-header">
+
+                <article class="">
+                  {% if section.main_image_path %}
+                    <figure>
+                    {% include img.html src=section.main_image_path width=1200 max-h=300 fit=crop alt=section.frontpagetitle %}
+                    </figure>
+                  {% endif %}
+                  <header class="">
                     <h2 class="title">{{ section.frontpagetitle }}</h2>
                   </header>
                   {% if section.homepage_description_markdown: %}
                     {{ section.homepage_description_markdown:  | markdownify }}<br>
-                    <span class="readmore">Read more <span>{{nextPost.title}} <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg></span>
+                    <span class="readmore">Read more </span> <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg>
 
                   {% endif %}
               </article>
-            </div>
+
             </a>
+
           </section>
 
       {% endif %}
 
     {% endfor %}
 
-
+<div class="editable">
+  <ul class="no-list">
+    <li>Chartered &amp; Registered Counselling Psychologist (HCPC)</li>
+    <li>Transpersonal and Integrative Psychotherapist (UKCP) </li>
+    <li>Accredited EMDR Consultant (EMDR Europe &amp; EMDR UK &amp; Ireland)</li>
+    <li>Associate Fellow and Registered Supervisor of British Psychological Society (BPS)</li>
+    <li>Professional Member of International Society for Traumatic Stress Studies</li>
+    <li>European Society for Traumatic Stress Society, and UK Psychological Trauma Society Member, ICEEFT and BEFTC (for Emotionally Focused Couples Therapy), Accredited Voluntary Register Scheme </li>
+    <li>Registered to accept payment with private insurers; Aviva, Bupa &amp; AXA-PPP </li>
+    <li>Office in Brighton &amp; Hove, East Sussex, UK</li>
+  </ul>
+</div>
