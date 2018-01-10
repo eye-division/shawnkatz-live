@@ -16,10 +16,6 @@ layout: default
 		{% if page.image_caption %}<figcaption>{{ alt_text }}</figcaption>{% endif %}
 		</figure>
 	{% endif %}
-
-  <article class="post-content">
-    {{ content }}
-  </article>
   <!-- quote -->
   {% if page.quote %}
     <blockquote>
@@ -27,6 +23,10 @@ layout: default
       <cite>{{ page.cite }}</cite>
     </blockquote>
   {% endif %}
+  <article class="post-content">
+    {{ content }}
+  </article>
+
 
   {% if page.images[0].image_path %}
     <section class="gallery">

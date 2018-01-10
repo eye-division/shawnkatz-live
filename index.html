@@ -33,7 +33,7 @@ _comments:
 
               {% if section.main_image_path %}
                 <figure class="nomargin">
-                {% include img.html src=section.main_image_path width=960 max-h=300 fit=crop alt=section.frontpagetitle %}
+                {% include img.html src=section.main_image_path width=960 max-h=300 fit=clip alt=section.frontpagetitle %}
                 </figure>
               {% endif %}
               <h2 class="title title--plain nomargin">{{ section.frontpagetitle }}</h2>
