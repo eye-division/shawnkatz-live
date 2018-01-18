@@ -44,6 +44,7 @@ p {
   margin: 0 0 $small-spacing;
 }
 
+
 a {
   color: $action-color;
   text-decoration: none;
@@ -102,12 +103,7 @@ code {
 .center {
   text-align: center;
 }
-.icon-text {
-  color: $action-color;
-  font-family: serif;
-  font-size: 2rem;
-  line-height: 2rem;
-}
+
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid $action-color;
@@ -115,18 +111,27 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
-blockquote:before {
+blockquote:before,
+blockquote:after {
   font-family: $heading-font-family;
   color: $action-color;
-  content: open-quote;
+
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+
 blockquote p {
   display: inline;
 }
 cite {
   display: block;
+  text-align: right;
 }

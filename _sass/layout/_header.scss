@@ -44,6 +44,7 @@
     border-top: $base-border;
     padding: 1em;
     display: grid;
+    align-items: start;
     grid-template-columns: 50% 50%;
     grid-gap: 10px;
 
@@ -54,4 +55,12 @@
 }
 .location-strip::after {
     border-bottom: $base-border;
+}
+// used in location-strip right now
+.icon-text {
+  display: inline-block;
+  color: $action-color;
+  font-family: serif;
+  font-size: 2rem;
+  line-height: 2.3rem;
 }
