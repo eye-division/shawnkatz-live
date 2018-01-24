@@ -17,7 +17,7 @@ description: Consultant psychologist and psychotherapist
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-url: "http://0.0.0.0:4000"
+url: "https://www.shawnkatz.com/"
 cover:
 #logo: "/assets/logo.png"
 email: a.ward@eyedivision.com
@@ -34,7 +34,7 @@ uploads_dir: "assets/images"
 # Image CDN
 imagecdn:
   staging: "https://ed-shawnkatz-dev.imgix.net"
-  #production: "https://ed-shwankatz.imgix.net"
+  production: "https://ed-shawnkatz.imgix.net"
 
 # Collections Example
 collections:
@@ -76,7 +76,7 @@ appurl:
 ga_tracking_id: ""
 
 # Google Recaptcha used for contact form
-#recaptcha_site_key: "6LcNYBQUAAAAAALGOjCFo1CKxb65aFTFelMJo1YF"
+recaptcha_site_key: "6Ld_TkIUAAAAAIAyJc3A7q7HDiECaYWaoPmdKcC_"
 
 # Social icons and sharing options
 #
