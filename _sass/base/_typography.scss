@@ -120,16 +120,16 @@ blockquote:after {
   line-height: 0.1em;
 }
 blockquote:before {
-  content: open-quote;
+  //content: open-quote;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-blockquote:after {
+/*blockquote:after {
   position: absolute;
   bottom: 30px;
   right: 0;
   content: close-quote;
-}
+}*/
 
 blockquote p {
   display: inline;

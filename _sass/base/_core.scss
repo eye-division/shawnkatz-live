@@ -28,7 +28,8 @@ body {
     height: 100vh;
     margin: 0;
     background-color: $base-background-color;
-    @include media ($medium-screen) {
+    @include media ($medium-screen-up) {
+
         grid-template-rows: minmax(240px, 20%) 1fr 20%;
     }
 }
@@ -73,7 +74,7 @@ figure {
 
 .halves {
     // grid setup
-    @include media ($large-screen) {
+    @include media ($large-screen-up) {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-gap: 10px;
@@ -111,7 +112,7 @@ figure {
         @include outer-container;
         padding: 1em;
         background-color: $white;
-        @include media ($large-screen) {
+        @include media ($large-screen-up) {
             padding: 0;
         }
     }
