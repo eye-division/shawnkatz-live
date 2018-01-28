@@ -36,7 +36,7 @@
     });*/
 
     // fitvid on embed
-    //$('.media').fitVids();
+    // $('.media').fitVids();
 
     // flexslider
     /*$('.flexslider').flexslider({
