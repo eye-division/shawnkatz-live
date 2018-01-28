@@ -16,8 +16,8 @@ description: Consultant psychologist and psychotherapist
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: ""
-# the base hostname & protocol for your site
-url: "https://www.shawnkatz.com/"
+# the base hostname & protocol for your site - no trailing slash
+url: "https://www.shawnkatz.com"
 cover:
 #logo: "/assets/logo.png"
 email: shawnkatz@btinternet.com
@@ -73,7 +73,7 @@ appurl:
 # disqus_shortname:
 
 # Google analytics
-ga_tracking_id: ""
+ga_tracking_id: "UA-113156247-1"
 
 # Google Recaptcha used for contact form
 recaptcha_site_key: "6Ld_TkIUAAAAAIAyJc3A7q7HDiECaYWaoPmdKcC_"
