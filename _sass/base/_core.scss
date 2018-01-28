@@ -15,8 +15,10 @@ html {
 }
 body {
     height: 100%;
+    // flex setup
     @include display(flex);
     @include flex-direction(column);
+
     // grid setup
     display: grid;
     grid-template-areas:
@@ -25,6 +27,7 @@ body {
       "footer";
     grid-template-rows: minmax(400px, 20%) 1fr 20%;
     grid-gap: 10px;
+
     height: 100vh;
     margin: 0;
     background-color: $base-background-color;
