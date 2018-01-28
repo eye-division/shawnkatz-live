@@ -47,8 +47,8 @@
     align-items: start;
     grid-template-columns: 50% 50%;
     grid-gap: 10px;
-
     @include media ($medium-screen-up) {
+        justify-items: center;
         padding: 1em 0;
         grid-template-columns: 25% 25% 25% 25%;
     }
