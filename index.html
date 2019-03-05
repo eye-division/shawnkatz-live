@@ -40,8 +40,8 @@ _comments:
                 </figure>
               {% endif %}
               <h2 class="title title--plain nomargin">{{ section.frontpagetitle }}</h2>
-              {% if section.homepage_description_markdown: %}
-                {{ section.homepage_description_markdown:  | markdownify }}
+              {% if section.homepage_description_markdown %}
+                {{ section.homepage_description_markdown  | markdownify }}
                 <span class="readmore">Read more </span> <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg>
               {% endif %}
 
